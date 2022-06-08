@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+    animation: daytonight 10s infinite 1.5%;
+
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+
+}
+
+.sun{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #F7EAC6;
+    border: 3px solid #F7EAC6;
+}
+.shdow{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: black;
+    top: -5px;
+    left: 0px;
+    animation: shadow 10s infinite 1.5s;
+}
+
+body span{
+    position: absolute;
+    top: 32%;
+    left: 46%;
+    color: #F7EAC6;
+    font-size:45px;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+@keyframes shadow {
+    0%{
+        transform: translateX(150px);
+        background-color: black;
+    }
+    50%{
+        transform: translateX(-10px);
+        background-color: black;
+
+    }
+    100%{
+        transform: translateX(-170px);
+        background-color: black;
+    }
+    
+}
+
+@keyframes daytonight {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: black;
+    }
+    
+}
